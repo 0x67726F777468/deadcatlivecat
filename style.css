@@ -1,0 +1,20 @@
+.patent-ticker {
+  background: #292d37;
+  height: 50px;
+}
+.patent-wrapper {
+  color: #fff;
+  margin: 5px;
+}
+.patent-title {
+  font-weight: bold;
+}
+.patent-number {
+  color: #fff;
+}
+.green {
+  color: #61c88e;
+}
+.red {
+  color: #f25949;
+}

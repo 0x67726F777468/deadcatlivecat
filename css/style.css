@@ -47,10 +47,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   /* padding-left: 0px; */
   /* padding-right: 0px; */
 }
+.patent-ticker-auto {
+  background:#292d37;
+  height: 58px;
+  overflow-x: hidden;
+  /* padding-left: 0px; */
+  /* padding-right: 0px; */
+}
 .patent-wrapper {
   color: #fff;
   padding-left: 12px;
   padding-right: 12px;
+  position: relative;
 }
 .patent-title {
   font-weight: bold;

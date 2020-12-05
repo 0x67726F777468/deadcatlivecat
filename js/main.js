@@ -27,6 +27,21 @@ slider.addEventListener('mousemove', (e) => {
   slider.scrollLeft = scrollLeft - walk;
 });
 
+// Auto Scroller
+var sliderAuto = $('.patent-ticker-auto').children();
+var inc = sliderAuto.length;
+var amount = 115;
+var i = 0;
+var timer = setInterval(function() {
+  $('.patent-ticker-auto').children().animate({left: '-'+amount+'px'}, 'slow', 'swing');
+  i++;
+  amount = amount + 115;
+  if (i === inc + 1) {
+    clearInterval(timer);
+    $('.patent-ticker-auto').children().animate({left: '0px'}, 'slow', 'swing')
+  }
+}, 2000);
+
 // Map
 
 var mymap = L.map('map').setView([51.505, -0.09], 8);
